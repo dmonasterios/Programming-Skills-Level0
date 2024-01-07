@@ -1,0 +1,18 @@
+{
+  "name": "excercise_2",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Level 0: Excersice 2 from blindma1den discord server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Monasterios",
+  "license": "ISC",
+  "dependencies": {
+    "async-prompt": "^1.0.1",
+    "prompt-async": "^0.9.9",
+    "prompt-sync": "^4.2.0",
+    "sync-fetch": "^0.5.2"
+  }
+}
