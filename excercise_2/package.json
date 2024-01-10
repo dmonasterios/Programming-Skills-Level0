@@ -10,9 +10,6 @@
   "author": "Daniel Monasterios",
   "license": "ISC",
   "dependencies": {
-    "async-prompt": "^1.0.1",
-    "prompt-async": "^0.9.9",
-    "prompt-sync": "^4.2.0",
-    "sync-fetch": "^0.5.2"
+    "prompt-sync": "^4.2.0"
   }
 }

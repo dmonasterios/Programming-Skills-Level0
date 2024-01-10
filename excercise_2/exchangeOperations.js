@@ -78,7 +78,7 @@ export function withdrawFunds(currencyInfo, currency) {
     console.log(`Converted Amount: ${convertedAmount}`);
     console.log(`Commission: ${commission}`);
     console.log(`Total: ${totalAmount}`);
-    opt =  prompt("Do you want to perform the operation? (Y/N)");
+    opt =  prompt("Do you want to perform the operation? (Y/N): ");
   }while(opt.toLowerCase() !== 'y' && opt.toLowerCase() !== 'n');
 
   if(opt.toLowerCase() === 'y') {
@@ -90,9 +90,9 @@ export function withdrawFunds(currencyInfo, currency) {
 export function continueOperations(){
   let opt;
   do{
-    opt = prompt("Do you want to perform another operation? (Y/N)")
+    opt = prompt("Do you want to perform another operation? (Y/N): ")
   }while(opt.toLowerCase() !== 'y' && opt.toLowerCase() !== 'n');
 
-  const isAppEnding = opt.toLowerCase() === 'y' ? false : true;
-  return isAppEnding;
+  const isAppRunning = opt.toLowerCase() === 'y' ? true : false;
+  return isAppRunning;
 }

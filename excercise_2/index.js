@@ -14,11 +14,14 @@ import { printMenu, menu } from "./menu.js";
 
 const prompt = PromptSync({ sigint: true });
 let opt;
+let isAppRunning = true;
 
 do {
   printMenu();
   opt = Number(prompt("Please select an option: "));
   console.clear();
-  opt = await (menu[opt] || menu["default"])();
-} while (opt !== 5 && opt !== true);
+  isAppRunning = await (menu[opt] || menu["default"])();
+  isAppRunning = isAppRunning === undefined ? true : false;
+
+} while (opt !== 5 && isAppRunning === true);
 

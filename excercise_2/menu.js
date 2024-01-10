@@ -55,12 +55,12 @@ const executeWithdrawFunds = async () => {
     console.log("The operation does not comply with the minimum requirements to be processed.");
     console.log("Remember that only transactions of ten dollars or more will be processed.");
   }
-  return continueOperations();;
+  return continueOperations();
 }
 
 const finishProgram = () => {
   console.log("GoodBye see you later.");
-  return true;
+  return false;
 }
 
 const defaultOption = () => {
