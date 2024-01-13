@@ -27,10 +27,10 @@ int main(){
 
 
   while(isUserLogIn){
-    clearScreen(0);
+    clearScreen();
     printMenu();
     cin>>opt;
-    clearScreen(0);
+    clearScreen();
 
     switch(opt){
       case 1:
