@@ -1,0 +1,14 @@
+.expenses{
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 100%;
+}
+
+.expenses__paragraph{
+  margin-top: 10px;
+}
+
+.expenses-container__content{
+  margin: 0 auto;
+}
+

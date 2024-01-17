@@ -1,0 +1,35 @@
+.health{
+  background-image: linear-gradient(90deg, #DEE2E6 0%, #E9ECEF 50%, #ADB5BD 100%);
+  margin: 20px 5px;
+  padding: 10px 20px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.health--good{
+  background-image: linear-gradient(90deg, var(--fairy-tale) 0%, var(--thistle) 50%, var(--carnation-pink) 100%);
+}
+
+.health--bad{
+  background-image: linear-gradient(90deg, var(--uranian-blue) 0%, var(--thistle) 50%, var(--light-sky-blue) 100%);
+}
+
+.health__title{
+  font-weight: 700;
+  color: var(--onyx);
+}
+
+.health__icon{
+  width: 70%;
+  max-width: 300px;
+}
+
+.health__paragraph{
+  line-height: 1.5;
+  text-align: center;
+  color: var(--onyx);
+}

@@ -1,0 +1,44 @@
+.incomes-form{
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  display: grid;
+  margin-bottom: 20px;
+}
+
+.incomes-form__group{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.incomes-form__input{
+  background: none;
+  font-family: inherit;
+  width: 200px;
+  border: none;
+  border-bottom: var(--slate-gray) solid 3px;
+  outline: none;
+  transition: border-color .5s;
+}
+
+.incomes-form__input:focus{
+  border-color: var(--fairy-tale) ;
+}
+
+.incomes-form__btn{
+  background: none;
+  font-family: inherit;
+  border: none;
+  background-color: var(--fairy-tale);
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 0 auto;
+  transition: background-color .5s;
+}
+
+.incomes-form__btn:hover{
+  background-color: var(--light-sky-blue);
+}
+

@@ -1,0 +1,14 @@
+.expense-item{
+  padding-bottom: 20px;
+  border-top: 2px solid var(--slate-gray);
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.expense-item:nth-child(odd){
+  background-color: var(--light-sky-blue);
+}
+
+.expense-item:nth-child(even){
+  background-color: var(--fairy-tale);
+}

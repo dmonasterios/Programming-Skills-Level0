@@ -1,0 +1,94 @@
+.home{
+  margin: 0 auto;
+  max-width: fit-content;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1000px,repeat(3, max-content);
+  grid-template-areas:
+  "ff"
+  "main"
+  "incomes"
+  "expenses"
+  ;
+}
+
+.home__title{
+  text-align: center;
+  letter-spacing: 5px;
+  color: var(--onyx);
+}
+
+.home__finantial-health{
+  grid-area: main;
+}
+
+.home__incomes{
+  grid-area: incomes;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home__expenses{
+  grid-area: expenses;
+  /* margin-left: 40px; */
+}
+
+.home__expenses-cta{
+  color: var(--onyx);
+  text-decoration: none;
+  background-color: var(--carnation-pink);
+  transition: background-color .5s;
+  display: block;
+  width: fit-content;
+  border-radius: 10px;
+  height: 40px;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+
+}
+
+.home__expenses-cta:hover{
+  background-color: var(--light-sky-blue);
+}
+
+.home__edit-incomes{
+  color: var(--slate-gray);
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  border: var(--light-sky-blue) 4px solid;
+  background-color:  var(--light-sky-blue) ;
+  transition: color, background .5s;
+}
+
+
+.home__edit-incomes:hover{
+  color: var(--carnation-pink);
+  background-color: transparent;
+  padding: 2px;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  border: var(---uranian-blue) 4px solid;
+}
+
+
+
+@media (min-width:768px){
+  .home{
+    max-width: 1440px;
+    width: 90%;
+    margin-top: 20px;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-areas:
+    "main main main incomes incomes"
+    "main main main expenses expenses"
+    "main main main expenses expenses";
+  }
+}

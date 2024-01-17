@@ -1,0 +1,26 @@
+{
+  "name": "excercise_3",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Level 0: Excersice 3 from blindma1den discord server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node settings.js",
+    "ts-node": "ts-node --esm src/index.ts",
+    "dev": "node dist/index.js"
+  },
+  "author": "Daniel Monasterios",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.0",
+    "esbuild": "^0.19.11",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.12"
+  }
+}

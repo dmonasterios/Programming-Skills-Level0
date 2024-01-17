@@ -1,0 +1,33 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.expenses-container{
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.expenses-container__cta{
+  color: var(--onyx);
+  display: block;
+  text-decoration: none;
+  width: fit-content;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: var(--carnation-pink);
+  transition: background-color .5s;
+}
+
+.expenses-container__cta:hover{
+  background-color: var(--light-sky-blue);
+}
+
+@media (min-width:768px){
+  .expenses-container{
+    width: 70%;
+  }
+}
